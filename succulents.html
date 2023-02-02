@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Succulents</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="css/style2.css" rel="stylesheet" type="text/css">
+		<link href="css/lightbox.min.css" rel="stylesheet" type="text/css">
+		<link href="css/price.css" rel="stylesheet" type="text/css">
+		<script src="js/lightbox-plus-jquery.min.js"></script>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+			
+    <style type="text/css">
+        .dropdown-menu li {
+            position: relative;
+        }
+        
+        .dropdown-menu .submenu {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: -7px;
+        }
+        
+        .dropdown-menu>li:hover>.submenu {
+            display: block;
+        }
+        
+        .dropdown-menu .submenu-left {
+            right: 100%;
+            left: auto;
+        }
+        
+        @media only screen and (max-width:800px) {
+            .dropdown-menu .submenu {
+                left: 25%;
+                top: 0px;
+            }
+
+        }
+    </style>
+	
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('.dropdown-menu').forEach(function(element) {
+                element.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                });
+            })
+
+            if (window.innerWidth < 992) {
+
+                document.querySelectorAll('.dropdown-menu a').forEach(function(element) {
+                    element.addEventListener('click', function(e) {
+
+                        let nextEl = this.nextElementSibling;
+                        if (nextEl && nextEl.classList.contains('submenu')) {
+                            e.preventDefault();
+                            if (nextEl.style.display == 'block') {
+                                nextEl.style.display = 'none';
+                            } else {
+                                nextEl.style.display = 'block';
+                            }
+
+                        }
+                    });
+                })
+            }
+
+        });
+    </script>
+	
+	</head>
+	
+	<body> <!--HEADER-->
+	
+	<div class="container">
+	
+		<body style ="background-color:#FFFFFF; font-family:arial;">
+			<div class="header" style="background-color:#78F342">
+			
+        <div class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Lala's Garden</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about-us.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact-us.html" class="nav-link">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">...</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="location.html" class="dropdown-item">Location</a></li>
+                                <li><a href="" class="dropdown-item">Products &raquo;</a>
+                                    <ul class="dropdown-menu submenu">
+                                        <li><a href="plants.html" class="dropdown-item">Ornamental Plants</a></li>
+                                        <li><a href="succulents.html" class="dropdown-item">Succulents</a>
+                                        </li>
+                                    </ul>
+                                </li>
+								<li><a href ="terms.htm" class="dropdown-item"> Terms and Conditions </a></li>									
+                                <li><a href="feedback.html" class="dropdown-item">Leave us a feedback!</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+		
+			<center>
+				<h1>Succulents</h1>
+			</center>
+		</div>
+	
+<hr />
+	<center> <!--LIGHT BOX-->
+		<div class="succulents">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="images/succulents/creamsun.jpg" data-lightbox="succulents" data-title="Creamsun"><img class="img-responsive" src="images/succulents/creamsun-price.jpg" width=300px height=400px></a>		
+					<a href="images/succulents/Raindrops.jpg" data-lightbox="succulents" data-title="Raindrops"><img class="img-responsive" src="images/succulents/Raindrops-price.jpg" width=300px height=400px></a>
+					<a href="images/succulents/ghost plant.jpg" data-lightbox="succulents" data-title="Ghost Plant (Big)"><img class="img-responsive" src="images/succulents/ghost plant-price.jpg" width=300px height=400px></a>
+					<a href="images/succulents/Adolphi.jpg" data-lightbox="succulents" data-title="Adolphi (Big)"><img class="img-responsive" src="images/succulents/Adolphi-price.jpg" width=300px height=400px></a>
+				</div>
+			</div>				
+				<br />
+			<div class="row">
+				<div class="col-md-12">
+					<a href="images/succulents/Madiba.jpg" data-lightbox="succulents" data-title="Madiba"><img class="img-responsive" src="images/succulents/Madiba-price.jpg" width=300px height=400px></a>
+					<a href="images/succulents/Heartstrings.jpg" data-lightbox="succulents" data-title="Heartstrings"><img class="img-responsive" src="images/succulents/Heartstrings-price.jpg" width=300px height=400px></a>
+					<a href="images/succulents/lola.jpg" data-lightbox="succulents" data-title="lola"><img class="img-responsive" src="images/succulents/lola-price.jpg" width=300px height=400px></a>
+					<a href="images/succulents/Millionaires.jpg" data-lightbox="succulents" data-title="Millionaires"><img class="img-responsive" src="images/succulents/Millionaires-price.jpg" width=300px height=400px></a>
+				</div>
+			</div>				
+				<br />
+			<div class="row">
+				<div class="col-md-12">
+					<a href="images/succulents/Purple Delight.jpg" data-lightbox="succulents" data-title="Purple Delight"><img class="img-responsive" src="images/succulents/Purple Delight-price.jpg" width=300px height=400px></a>
+					<a href="images/succulents/Flapjack.jpg" data-lightbox="succulents" data-title="Flapjack"><img class="img-responsive" src="images/succulents/Flapjack-price.jpg" width=300px height=400px></a>	
+					<a href="images/succulents/Cinderella.jpg" data-lightbox="succulents" data-title="Cinderella"><img class="img-responsive" src="images/succulents/Cinderella-price.jpg" width=300px height=400px></a>
+					<a href="images/succulents/Marina.jpg" data-lightbox="succulents" data-title="Variegated Burle Marx"><img class="img-responsive" src="images/succulents/Marina-price.jpg" width=300px height=400px></a>
+				</div>
+			</div>				
+				<br />
+			<div class="row">
+				<div class="col-md-12">
+					<a href="images/succulents/Jade Plant.jpg" data-lightbox="succulents" data-title="Jade Plant"><img class="img-responsive" src="images/succulents/Jade Plant-price.jpg" width=300px height=400px></a>						
+				</div>
+			</div>	
+				<br />
+		</div>
+	</center>
+<hr />
+		<div class="row">
+			<div class="col-md-12">		
+		
+				<div class="footer" style="background-color:#78F342"> <!--FOOTER-->
+					<center>
+						<a href ="index.html"> Home </a> &nbsp | &nbsp
+						<a href ="about-us.html"> About Us </a> &nbsp | &nbsp
+						<a href ="contact-us.html"> Contact Us </a> &nbsp | &nbsp
+						<a href ="location.html"> Location </a> &nbsp | &nbsp
+						<a href ="plants.html"> Ornamental Plants </a> &nbsp | &nbsp
+						<a href ="succulents.html"> Succulents </a> &nbsp | &nbsp
+						<a href ="terms.htm"> Terms and Conditions </a> &nbsp | &nbsp
+						<a href ="feedback.html"> Feedback </a>
+					</center>
+				</div>
+			</div>
+		</div>
+<style>		
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: gray;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+</style>	
+	
+	</div>
+	</body>
+</html>		

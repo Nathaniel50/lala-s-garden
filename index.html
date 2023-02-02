@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="css/style2.css" rel="stylesheet" type="text/css">
+		<link href="css/lightbox.min.css" rel="stylesheet" type="text/css">
+		<link href="css/price.css" rel="stylesheet" type="text/css">
+		<script src="js/lightbox-plus-jquery.min.js"></script>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+		
+    <style type="text/css">
+        .dropdown-menu li {
+            position: relative;
+        }
+        
+        .dropdown-menu .submenu {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: -7px;
+        }
+        
+        .dropdown-menu>li:hover>.submenu {
+            display: block;
+        }
+        
+        .dropdown-menu .submenu-left {
+            right: 100%;
+            left: auto;
+        }
+        
+        @media only screen and (max-width:800px) {
+            .dropdown-menu .submenu {
+                left: 25%;
+                top: 0px;
+            }
+
+        }
+    </style>
+	
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('.dropdown-menu').forEach(function(element) {
+                element.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                });
+            })
+
+            if (window.innerWidth < 992) {
+
+                document.querySelectorAll('.dropdown-menu a').forEach(function(element) {
+                    element.addEventListener('click', function(e) {
+
+                        let nextEl = this.nextElementSibling;
+                        if (nextEl && nextEl.classList.contains('submenu')) {
+                            e.preventDefault();
+                            if (nextEl.style.display == 'block') {
+                                nextEl.style.display = 'none';
+                            } else {
+                                nextEl.style.display = 'block';
+                            }
+
+                        }
+                    });
+                })
+            }
+
+        });
+    </script>
+	
+
+	
+	</head>
+	
+	<body> <!--HEADER-->
+	
+	<div class="container">
+	
+		<body style ="background-color:#FFFFFF; font-family:arial;">
+			<div class="header" style="background-color:#78F342">
+			
+				<div class="navbar navbar-expand-lg navbar-light bg-light">
+					<div class="container-fluid">
+						<a href="index.html" class="navbar-brand">Lala's Garden</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+						<span class="navbar-toggler-icon"></span>					
+						</button>
+              
+							<div class="collapse navbar-collapse" id="nav">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a href="index.html" class="nav-link">Home</a>
+									</li>
+									<li class="nav-item">
+										<a href="about-us.html" class="nav-link">About Us</a>
+									</li>
+									<li class="nav-item">
+										<a href="contact-us.html" class="nav-link">Contact Us</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">...</a>
+									<ul class="dropdown-menu">
+										<li><a href="location.html" class="dropdown-item">Location</a></li>
+										<li><a href="" class="dropdown-item">Products &raquo;</a>
+											<ul class="dropdown-menu submenu">
+												<li><a href="plants.html" class="dropdown-item">Ornamental Plants</a></li>
+												<li><a href="succulents.html" class="dropdown-item">Succulents</a>
+												</li>
+											</ul>
+										</li>
+									<li><a href ="terms.htm" class="dropdown-item"> Terms and Conditions </a></li>											
+									<li><a href="feedback.html" class="dropdown-item">Leave us a feedback!</a></li>
+									</ul>
+									</li>
+								</ul>
+							</div>
+					</div>
+				</div>
+		
+			<center>
+				<h1>Home</h1>				
+		</div>
+	
+<hr />				
+
+	<section>
+		<img class="mySlides" src="images/garden1.gif" style="width:100%">
+		<img class="mySlides" src="images/garden2.jpg" style="width:100%">
+		<img class="mySlides" src="images/garden3.jpg" style="width:100%">
+	</section>
+
+	<br />
+	
+	<center>
+	<section class="brand" style="max-width:600px">
+		<h2 class="brand">LALA'S GARDEN</h2>
+		<p class="catch-phrase"><i>Decorate your home with green!</i></p>
+	</section>
+
+	<p class="w3-justify">A passion project of mine to spread the satisfaction and beauty of taking care of your very own garden.</p>
+	</section></center>
+	
+	<center>
+	<section class="background-color:light-grey">
+		<div class="row">
+			<div class="col-md-12">		
+				<img class="img-responsive" src="images/plants.jpg" alt="calathea" style="width:400px;height:500px" usemap="#plants">
+					<map name="plants">
+						<area shape="rect" coords="1,1,3057,4065" alt="Calathea" href="plants.html">
+					</map>
+
+				<img class="img-responsive" src="images/succulents.jpg" alt="heartstrings" style="width:400px;height:500px" usemap="#succulents">
+					<map name="succulents">
+						<area shape="rect" coords="1,1,3057,4065" alt="Calathea" href="succulents.html">
+					</map>
+					
+				<img class="img-responsive"src="images/aboutus.jpg" alt="garden" style="width:400px;height:500px" usemap="#aboutus">
+					<map name="aboutus">
+						<area shape="rect" coords="1,1,3057,4065" alt="Calathea" href="about-us.html">
+					</map>				
+			</div>
+		</div>
+	</center>
+	</section>
+	
+	<script>
+	// Automatic Slideshow - change image every 3 seconds
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	myIndex++;
+	if (myIndex > x.length) {myIndex = 1}
+	x[myIndex-1].style.display = "block";
+	setTimeout(carousel, 3000);
+	}
+	</script>
+				
+	
+					
+	<br /><br /><br /><br /><br />		
+
+
+
+	
+	</center>
+<hr />
+
+		<div class="row">
+			<div class="col-md-12">		
+		
+				<div class="footer" style="background-color:#78F342"> <!--FOOTER-->
+					<center>
+						<a href ="index.html"> Home </a> &nbsp | &nbsp
+						<a href ="about-us.html"> About Us </a> &nbsp | &nbsp
+						<a href ="contact-us.html"> Contact Us </a> &nbsp | &nbsp
+						<a href ="location.html"> Location </a> &nbsp | &nbsp
+						<a href ="plants.html"> Ornamental Plants </a> &nbsp | &nbsp
+						<a href ="succulents.html"> Succulents </a> &nbsp | &nbsp
+						<a href ="terms.htm"> Terms and Conditions </a> &nbsp | &nbsp
+						<a href ="feedback.html"> Feedback </a>
+						<p> Nathaniel Solivio, Brent Sigua, Brent Sikat</p>
+					</center>
+				</div>
+			</div>
+		</div>
+<style>			
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: gray;
+  background-color: transparent;
+  text-decoration: underline;
+}		
+</style>			
+	</div>
+	
+	</body>
+</html>		
